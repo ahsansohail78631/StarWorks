@@ -1,0 +1,8 @@
+{
+  "name": "Star Engineering Works - Precision Industrial Engineering",
+  "description": "Official industrial engineering portal for Star Engineering Works (Est. 1985, ISO 9001:2015). Showcasing 11+ core machining capacities, indigenous underwater connectors, industrial valves, and client portfolio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

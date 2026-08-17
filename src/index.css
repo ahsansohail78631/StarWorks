@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-tech {
+    font-family: 'Chakra Petch', 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Engineering Technical Grid & Blueprint backgrounds */
+.engineering-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(241, 90, 43, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(241, 90, 43, 0.05) 1px, transparent 1px);
+}
+
+.engineering-grid-dark {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+.blueprint-pattern {
+  background-color: #111A2C;
+  background-image: 
+    radial-gradient(rgba(241, 90, 43, 0.15) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 24px 24px;
+}
+
+.tech-border-glow {
+  box-shadow: 0 0 20px -5px rgba(241, 90, 43, 0.3);
+}
+
+.gear-rotate-slow {
+  animation: rotateGear 40s linear infinite;
+}
+
+.gear-rotate-reverse {
+  animation: rotateGearRev 35s linear infinite;
+}
+
+@keyframes rotateGear {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotateGearRev {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Custom Scrollbar for industrial aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3D5A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F15A2B;
+}
